@@ -1,0 +1,72 @@
+<html>
+<head><link rel="stylesheet" type="text/css" href="sig.css">
+	<script src="sig.js" type="text/javascript"></script>
+</head>
+
+
+<div class="header">
+	
+	<ul class="active">
+  <b><li><a  href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li></b>
+</ul></div>
+
+<body>
+	
+
+<div class="container">
+	<div class="box">
+		<div class="image">
+			<img src="IMG1.png" alt="User Avatar">
+		</div>
+		<h2>SIGN-UP</h2>
+		<form onsubmit="fnValidateSignup(event)">
+               <!-- html validation using pattern-->
+		<div class="inputclass">
+			<label for="username"></label>
+			<input type="text" id="username" name="username" placeholder="Enter Username"  ><!--pattern="[A-Z]{5}"-->
+			<br>
+			<span class="error name-empty">this field is empty</span>
+			<span class="error name-invalid">this field should contain atleast 5 characters</span>
+		</div>
+        
+		<div class="inputclass">
+			<label for="password"></label>
+			<input type="password" id="password" name="password" placeholder="Enter Password" >
+			<span class="error pass-empty">Set password</span>
+			<span class="error pass-len">password must contain atleast 8 characters</span>
+			<span class="error pass-caps">password must contain atleast 1 capital letters</span>
+			<span class="error pass-small">password must contain atleast 1 small letters</span>
+			<span class="error pass-sc">password must contain atleast 1 special character</span>
+			<span class="error pass-num">password must contain atleast 1 number</span>
+			
+
+		</div>
+        <div class="inputclass">
+			<label for="password"></label>
+			<input type="password" id="cpassword" name="password" placeholder="Confirm Password" >
+			<span class="error pass-notmatch">Passwords do not match</span>
+		</div>
+        <div class="inputclass">
+			<label for="mail"></label>
+			<input type="mail" id="mail" name="mail" placeholder="Enter mail" >
+			<span class="error mail">enter the valid mail</span>
+		</div>
+		<button onclick =" " type="submit" class="login">CREATE ACCOUNT</button>
+
+	</form>
+		<center>
+			<div class="signup">
+			<a href="login.html"><p>Already have an account? Login here</p></a>
+		</div></center>
+	</div>
+	
+</div>
+
+
+</body>
+
+
+
